@@ -1,0 +1,74 @@
+.storiesContainer {
+    padding-top: 20px;
+  }
+  
+  .storiesTitle {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 2.25rem; /* 36px */
+    line-height: 1.1;
+    color: #032D42;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+  }
+  
+  .storiesHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #62D84E;
+    @apply rounded-md;
+    padding: 8px;
+    margin-bottom: 1px;
+  }
+  
+  .headerTitle,
+  .headerAsA,
+  .headerIWantTo,
+  .headerSoThat,
+  .headerAcceptanceCriteria,
+  .headerHints {
+    color: #FFFFFF;
+    font-size: 1.25rem; /* 20px */
+    font-weight: bold;
+    text-align: left;
+    flex: 1; /* This will ensure each column has the same width */
+  }
+  
+  .storiesList {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .storyItem,
+  .storyItemAlt {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    @apply rounded-md;
+
+    margin-bottom: 1px;
+  }
+  
+  .storyTitle,
+  .storyAsA,
+  .storyIWantTo,
+  .storySoThat,
+  .storyAcceptanceCriteria,
+  .storyHints {
+    color: #032D42;
+    text-align: left;
+    flex: 1; /* This will ensure each column has the same width */
+    padding-right: 8px; /* Adjusts for text length */
+
+    a {
+        text-decoration: underline;
+    }
+  }
+  
+  .storyItem {
+    background-color: #FFFFFF;
+  }
+  
+  .storyItemAlt {
+    background-color: #f2f2f2;
+  }

@@ -170,6 +170,11 @@ const config = {
           },
           
           {to: '/blog', label: 'Blog', position: 'left'},*/
+         /*{
+            label: 'Build Along Month',
+            to: '/buildAlongMonth',
+            position: 'left',
+          },*/
           {
             label: 'Developer',
             href: 'https://developer.servicenow.com/',

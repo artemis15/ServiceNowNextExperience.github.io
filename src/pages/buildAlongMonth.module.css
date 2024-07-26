@@ -1,0 +1,5 @@
+.questionsSection, .needToKnowSection, .storySection, .uiBuilderSection, .storiesSection {
+    a {
+        text-decoration: underline;
+    }
+}
