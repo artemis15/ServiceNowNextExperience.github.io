@@ -8,13 +8,13 @@ const DevelopmentStories = () => {
   return (
     <div className={styles.storiesContainer}>
       <h1 className={styles.storiesTitle}>Stories</h1>
-<p className={styles.storyHints}>Here are the stories we will be covering in the <a href="https://www.youtube.com/playlist?list=PL3rNcyAiDYK2Bgzj4mRdtfxMpGkI5KXBJ" target="_blank">You & I Builder Live</a> livestreams. After the livestreams, we'll come back here and update the stories to show which video covers which stories and highlight the ones we didn't get to cover. 
+<p className={styles.storyHints}>Here are the stories we will be covering in the <a href="https://www.youtube.com/playlist?list=PL3rNcyAiDYK2Bgzj4mRdtfxMpGkI5KXBJ" target="_blank"><u>You & I Builder Live</u></a> livestreams. After the livestreams, we'll come back here and update the stories to show which video covers which stories and highlight the ones we didn't get to cover. 
 </p>
 <p className={styles.storyHints}>
-    <a href="https://www.youtube.com/live/1Hcr4odti6A?si=tP0jrwuH24Zxsj3F" target="_blank">Livestream 1 - August 8th, 2024</a>
+    <a href="https://www.youtube.com/live/1Hcr4odti6A?si=tP0jrwuH24Zxsj3F" target="_blank"><u>Livestream 1 - August 8th, 2024</u></a>
 </p>
 <p className={styles.storyHints}>
-<a href="https://www.youtube.com/live/0e8Xkr5okbM?si=Plz-xjZP-pxJRU3d" target="_blank">Livestream 2 - August 22nd, 2024</a>
+<a href="https://www.youtube.com/live/0e8Xkr5okbM?si=Plz-xjZP-pxJRU3d" target="_blank"><u>Livestream 2 - August 22nd, 2024</u></a>
 </p>
 <br/>
       <div className={styles.storiesHeader}>
