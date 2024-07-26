@@ -57,7 +57,7 @@ function BuildAlongMonth() {
 
         <div className={styles.questionsSection}>
           <h2>Questions?</h2>
-          <p>The best place to ask questions about this project is going to be in the SNDevs slack server. You can grab an invite by going to <a href="https://SNDevs.com" target="_blank">SNDevs.com</a>, then find the channel <code>#next-experience-uib-workspace</code> for asking questions about UI Builder/Workspace related issues, and you can ask in <code>#you-and-i-build-along-month</code> about any of the extra, non-UI Builder, stories linked below. Be sure to link to this guide when you ask questions and use good <a href="https://xyproblem.info/" target="_blank">question asking best practice</a>.</p>          
+          <p>The best place to ask questions about this project is going to be in the SNDevs slack server. You can grab an invite by going to <a href="https://SNDevs.com" target="_blank"><u>SNDevs.com</u></a>, then find the channel <code>#next-experience-uib-workspace</code> for asking questions about UI Builder/Workspace related issues, and you can ask in <code>#you-and-i-build-along-month</code> about any of the extra, non-UI Builder, stories linked below. Be sure to link to this guide when you ask questions and use good <a href="https://xyproblem.info/" target="_blank"><u>question asking best practice</u></a>.</p>          
           <p>Important things to include in your posts:
           </p>
           <ul style={listStyles}>
@@ -103,19 +103,19 @@ function BuildAlongMonth() {
 
         <div className={styles.uiBuilderSection}>
           <h2>What is UI Builder?</h2>
-          <p>UI Builder is a ServiceNow product used to create user experiences. It can be used to create Workspaces and Experiences, but we still recommend you use Angular Service Portals to create end-user public portals. For more information on when to use each technology, please visit <a href="https://www.servicenow.com/community/next-experience-articles/ui-builder-and-service-portal/ta-p/2370515" target="_blank">this Community Article</a>.</p>
+          <p>UI Builder is a ServiceNow product used to create user experiences. It can be used to create Workspaces and Experiences, but we still recommend you use Angular Service Portals to create end-user public portals. For more information on when to use each technology, please visit <a href="https://www.servicenow.com/community/next-experience-articles/ui-builder-and-service-portal/ta-p/2370515" target="_blank"><u>this Community Article</u></a>.</p>
           <p>If you want more UI Builder resources to learn from and reference, we recommend you check out:
           </p>
         <ul style={listStyles}>
-        <li style={listItemStyles}><a href="https://nowlearning.servicenow.com/lxp/en/now-platform/ui-builder-fundamentals-washington?id=learning_course_prev&course_id=a462a97fc35439185922751ce00131bd" target="_blank">NowLearning - UI Builder Fundamentals (Washington)</a></li>
-        <li style={listItemStyles}><a href="https://servicenownextexperience.github.io/labs/LAB2050-K24-Intro-to-Workspaces/overview" target="_blank">Crafting Workspaces Like a Pro: A Hands-On Learning Adventure! Lab</a> </li>
+        <li style={listItemStyles}><a href="https://nowlearning.servicenow.com/lxp/en/now-platform/ui-builder-fundamentals-washington?id=learning_course_prev&course_id=a462a97fc35439185922751ce00131bd" target="_blank"><u>NowLearning - UI Builder Fundamentals (Washington)</u></a></li>
+        <li style={listItemStyles}><a href="https://servicenownextexperience.github.io/labs/LAB2050-K24-Intro-to-Workspaces/overview" target="_blank"><u>Crafting Workspaces Like a Pro: A Hands-On Learning Adventure! Lab</u></a> </li>
           </ul>
         </div>
         <div className={styles.uiBuilderSection}>
         <h2>Update set</h2>
         <p>Here is the update set you're going to need to load in to your instance to get the application files you can start with:</p>
         <ul style={listStyles}>
-        <li style={listItemStyles}><a href="src/pages/downloads/YIBL_BAM_Conference-Notes_v1.0.01.xml" download="YIBL_BAM_Conference-Notes_v1.0.01.xml">Download Update Set - BAM Conference Notes v1.0.01 (Last updated 7.28.2024)</a>
+        <li style={listItemStyles}><a href="src/pages/downloads/YIBL_BAM_Conference-Notes_v1.0.01.xml" download="YIBL_BAM_Conference-Notes_v1.0.01.xml"><u>Download Update Set - BAM Conference Notes v1.0.01 (Last updated 7.28.2024)</u></a>
             </li>
         </ul>
         </div>
