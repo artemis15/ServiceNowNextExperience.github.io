@@ -1,0 +1,44 @@
+import React from 'react';
+import styles from './DevelopmentStories.module.css'; // Make sure to create a corresponding CSS module file
+
+// Sample data import from a spreadsheet (assuming it's converted to a JSON format)
+import storiesData from './storiesData.json';
+
+const DevelopmentStories = () => {
+  return (
+    <div className={styles.storiesContainer}>
+      <h1 className={styles.storiesTitle}>Stories</h1>
+<p className={styles.storyHints}>Here are the stories we will be covering in the <a href="https://www.youtube.com/playlist?list=PL3rNcyAiDYK2Bgzj4mRdtfxMpGkI5KXBJ" target="_blank">You & I Builder Live</a> livestreams. After the livestreams, we'll come back here and update the stories to show which video covers which stories and highlight the ones we didn't get to cover. 
+</p>
+<p className={styles.storyHints}>
+    <a href="https://www.youtube.com/live/1Hcr4odti6A?si=tP0jrwuH24Zxsj3F" target="_blank">Livestream 1 - August 8th, 2024</a>
+</p>
+<p className={styles.storyHints}>
+<a href="https://www.youtube.com/live/0e8Xkr5okbM?si=Plz-xjZP-pxJRU3d" target="_blank">Livestream 2 - August 22nd, 2024</a>
+</p>
+<br/>
+      <div className={styles.storiesHeader}>
+        <div className={styles.headerTitle}>Title</div>
+        <div className={styles.headerAsA}>As a</div>
+        <div className={styles.headerIWantTo}>I want to</div>
+        <div className={styles.headerSoThat}>So that</div>
+        <div className={styles.headerAcceptanceCriteria}>Acceptance Criteria</div>
+        <div className={styles.headerHints}>Hints</div>
+      </div>
+      <div className={styles.storiesList}>
+        {storiesData.map((story, index) => (
+          <div key={index} className={index % 2 === 0 ? styles.storyItem : styles.storyItemAlt}>
+            <div className={styles.storyTitle}>{story.title}</div>
+            <div className={styles.storyAsA}>{story.asA}</div>
+            <div className={styles.storyIWantTo}>{story.iWantTo}</div>
+            <div className={styles.storySoThat}>{story.soThat}</div>
+            <div className={styles.storyAcceptanceCriteria}>{story.acceptanceCriteria}</div>
+            <div className={styles.storyHints}>{story.hints}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default DevelopmentStories;

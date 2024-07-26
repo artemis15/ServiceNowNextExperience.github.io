@@ -97,6 +97,41 @@ h1 {
   @apply leading-normal;
   @apply text-nowinfblue-100;
 }
+h2 {
+  color: #FFFFFF !important;
+  @apply bg-nowinfblue-100;
+  @apply font-bold;
+  @apply p-1;
+  @apply pl-5;
+  @apply mt-3;
+  @apply mb-4;
+  @apply rounded-md;
+  @apply text-xl;
+
+}
+
+h3 {
+  font-family: "Gilroy-Bold", sans-serif;
+  @apply text-2xl; /* Adjust the size as needed */
+  @apply leading-snug;
+  @apply font-normal;
+  @apply leading-normal;
+  @apply text-nowinfblue-100;
+}
+
+p,li {
+  font-size: 1.1rem; /* Equivalent to 'text-md' */
+  margin-top: 0.5rem; /* Equivalent to 'mt-2' */
+  line-height: 1.2; /* Equivalent to 'leading-6' */
+  color: #032D42; /* Replace with the actual color code for 'text-nowinfblue-100' */
+  margin: 10px;
+}
+
+.customSubtitle {
+  color: #fff !important;
+}
+
+
 
 p img {
   max-width: 100%;

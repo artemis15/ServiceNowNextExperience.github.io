@@ -1,0 +1,26 @@
+[
+    {
+      "title": "User Login",
+      "asA": "User",
+      "iWantTo": "be able to log in to the website",
+      "soThat": "I can access my personal dashboard",
+      "acceptanceCriteria": "Given I am on the login page, when I enter valid credentials, then I should be redirected to my dashboard.",
+      "hints": "Use OAuth for secure authentication."
+    },
+    {
+      "title": "Profile Update",
+      "asA": "Registered User",
+      "iWantTo": "update my profile information",
+      "soThat": "I can keep my personal information up to date",
+      "acceptanceCriteria": "Given I am on the profile page, when I update my information and submit, then I should see a confirmation message.",
+      "hints": "Ensure all fields have proper validation."
+    },
+    {
+      "title": "Story Submission",
+      "asA": "Contributor",
+      "iWantTo": "submit new development stories",
+      "soThat": "they can be reviewed and included in the backlog",
+      "acceptanceCriteria": "Given I am on the submission page, when I fill out the story form and submit, then I should receive an email confirmation.",
+      "hints": "Include a WYSIWYG editor for detailed story descriptions."
+    }
+  ]
