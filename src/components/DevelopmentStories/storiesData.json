@@ -1,26 +1,122 @@
 [
-    {
-      "title": "User Login",
-      "asA": "User",
-      "iWantTo": "be able to log in to the website",
-      "soThat": "I can access my personal dashboard",
-      "acceptanceCriteria": "Given I am on the login page, when I enter valid credentials, then I should be redirected to my dashboard.",
-      "hints": "Use OAuth for secure authentication."
-    },
-    {
-      "title": "Profile Update",
-      "asA": "Registered User",
-      "iWantTo": "update my profile information",
-      "soThat": "I can keep my personal information up to date",
-      "acceptanceCriteria": "Given I am on the profile page, when I update my information and submit, then I should see a confirmation message.",
-      "hints": "Ensure all fields have proper validation."
-    },
-    {
-      "title": "Story Submission",
-      "asA": "Contributor",
-      "iWantTo": "submit new development stories",
-      "soThat": "they can be reviewed and included in the backlog",
-      "acceptanceCriteria": "Given I am on the submission page, when I fill out the story form and submit, then I should receive an email confirmation.",
-      "hints": "Include a WYSIWYG editor for detailed story descriptions."
-    }
-  ]
+  {
+    "title": "Create Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Have a go-to page where I can control my application",
+    "soThat": "I can easily and quickly access different functions of my app",
+    "acceptanceCriteria": "The page has been created in UI Builder under the U&I Conference notes Workspace experience",
+    "hints": ""
+  },
+  {
+    "title": "Create page layout for Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Have an easy and intuitive user interface and page layout",
+    "soThat": "I can navigate the page and functions of this application without frustration or hindrances",
+    "acceptanceCriteria": "Create a page layout that is easy to use, feel free to get as creative as you'd like. You can do as much design or as little design as you want.",
+    "hints": "<ul><li>It is recommended that for the fields you will be creating on this page in the following stories, you don't use the \"Form\" component. Instead, use input field components of the appropriate type. It will require you to create more configuration for all of that to work how you want it to work, but the Form component is more complex to use for this use case.</li><li>You might end up trying to use the Form component to do this, and that's ok! Give it a shot and figure out how it works, it's still a valid way to execute on this story. But if you get stuck, just go back to the previously suggested approach.</li></ul>"
+  },
+  {
+    "title": "Add \"Name\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Fill in fields on a form",
+    "soThat": "I can enter the contact's name",
+    "acceptanceCriteria": "The form entry page includes a \"Name\" field (string, required).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Email\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add an \"Email\" field to the form",
+    "soThat": "I can enter the contact's email address",
+    "acceptanceCriteria": "The form entry page includes an \"Email\" field (string, required, with email format validation).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Note\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Note\" field to the form",
+    "soThat": "I can enter notes about the contact",
+    "acceptanceCriteria": "The form entry page includes a \"Note\" field (string, required).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Phone Number\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Phone Number\" field to the form",
+    "soThat": "I can enter the contact's phone number",
+    "acceptanceCriteria": "The form entry page includes a \"Phone Number\" field (string).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Job Title\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Job Title\" field to the form",
+    "soThat": "I can enter the contact's job title",
+    "acceptanceCriteria": "The form entry page includes a \"Job Title\" field (string).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Company/Organization\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Company/Organization\" field to the form",
+    "soThat": "I can enter the contact's company name",
+    "acceptanceCriteria": "The form entry page includes a \"Company/Organization\" field (string).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Conference Session Attended\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Conference Session Attended\" field to the form",
+    "soThat": "I can enter the session the contact attended",
+    "acceptanceCriteria": "The form entry page includes a \"Conference Session Attended\" field (string).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Follow-Up Action\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Follow-Up Action\" field to the form",
+    "soThat": "I can enter follow-up actions with the contact",
+    "acceptanceCriteria": "The form entry page includes a \"Follow-Up Action\" field (string).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Date/Time Met\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Date/Time Met\" field to the form",
+    "soThat": "I can enter the date/time the contact was met",
+    "acceptanceCriteria": "The form entry page includes a \"Date/Time Met\" field (date/time).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Tags/Interests\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Tags/Interests\" field to the form",
+    "soThat": "I can enter tags or interests of the contact",
+    "acceptanceCriteria": "The form entry page includes a \"Tags/Interests\" field (string).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Photo\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Photo\" field to the form",
+    "soThat": "I can upload a photo or business card image",
+    "acceptanceCriteria": "The form entry page includes a \"Photo\" field (attachment).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Location Met\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add a \"Location Met\" field to the form",
+    "soThat": "I can enter the location where the contact was met",
+    "acceptanceCriteria": "The form entry page includes a \"Location Met\" field (string).",
+    "hints": ""
+  },
+  {
+    "title": "Add \"Event Role\" Field to Form Entry Page",
+    "asA": "Conference attendee",
+    "iWantTo": "Add an \"Event Role\" field to the form",
+    "soThat": "I can enter the event role of the contact",
+    "acceptanceCriteria": "The form entry page includes an \"Event Role\" field (string).",
+    "hints": ""
+  }
+]

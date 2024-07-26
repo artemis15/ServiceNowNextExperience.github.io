@@ -1,74 +1,124 @@
 .storiesContainer {
-    padding-top: 20px;
-  }
-  
-  .storiesTitle {
-    font-family: "Gilroy-Bold", sans-serif;
-    font-size: 2.25rem; /* 36px */
-    line-height: 1.1;
-    color: #032D42;
-    margin-bottom: 20px;
-    font-weight: bold;
+  padding-top: 20px;
+}
 
-  }
-  
-  .storiesHeader {
-    display: flex;
-    justify-content: space-between;
-    background-color: #62D84E;
-    @apply rounded-md;
-    padding: 8px;
-    margin-bottom: 1px;
-  }
-  
-  .headerTitle,
-  .headerAsA,
-  .headerIWantTo,
-  .headerSoThat,
-  .headerAcceptanceCriteria,
-  .headerHints {
-    color: #FFFFFF;
-    font-size: 1.25rem; /* 20px */
-    font-weight: bold;
-    text-align: left;
-    flex: 1; /* This will ensure each column has the same width */
-  }
-  
-  .storiesList {
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .storyItem,
-  .storyItemAlt {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    @apply rounded-md;
+.storiesTitle {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 2.25rem; /* 36px */
+  line-height: 1.1;
+  color: #032D42;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 
-    margin-bottom: 1px;
-  }
-  
-  .storyTitle,
-  .storyAsA,
-  .storyIWantTo,
-  .storySoThat,
-  .storyAcceptanceCriteria,
-  .storyHints {
-    color: #032D42;
-    text-align: left;
-    flex: 1; /* This will ensure each column has the same width */
-    padding-right: 8px; /* Adjusts for text length */
+.storiesHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: #62D84E;
+  @apply rounded-md;
+  padding: 8px;
+  margin-bottom: 10px; /* Space below the header */
+}
 
-    a {
-        text-decoration: underline;
-    }
-  }
-  
-  .storyItem {
-    background-color: #FFFFFF;
-  }
-  
-  .storyItemAlt {
-    background-color: #f2f2f2;
-  }
+.headerCheckbox {
+  width: 40px; /* Adjust width for larger checkboxes */
+}
+
+.headerTitle,
+.headerAsA,
+.headerIWantTo,
+.headerSoThat,
+.headerAcceptanceCriteria,
+.headerHints {
+  color: #FFFFFF;
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+  text-align: left;
+  flex: 1; /* Ensures equal width for columns */
+}
+
+.storiesList {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px; /* Space between the button and the table */
+}
+
+.storyItem,
+.storyItemAlt,
+.storyCompleted {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  @apply rounded-md;
+  margin-bottom: 1px;
+}
+
+.storyTitle,
+.storyAsA,
+.storyIWantTo,
+.storySoThat,
+.storyAcceptanceCriteria,
+.storyHints {
+  color: #032D42;
+  text-align: left;
+  flex: 1; /* Ensures equal width for columns */
+  padding-right: 8px; /* Adjusts for text length */
+}
+
+.storyItem {
+  background-color: #FFFFFF;
+}
+
+.storyItemAlt {
+  background-color: #f2f2f2;
+}
+
+.storyCheckbox {
+  display: flex;
+  align-items: center; /* Align checkboxes to the center */
+  justify-content: center;
+  width: 40px; /* Make checkboxes bigger */
+  height: 40px; /* Make checkboxes bigger */
+}
+
+.clearAllButton {
+  background-color: #62D84E;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Ensure the button is on its own line */
+  margin-bottom: 20px; /* Space below the button */
+  margin-left: auto;
+  margin-right: 0;
+  transition: background-color 0.3s ease;
+}
+
+.clearAllButton:hover {
+  background-color: red; /* Button turns red on hover */
+  color: white; /* Ensure text is readable */
+}
+
+.clearAllButton.confirm {
+  background-color: red;
+}
+
+.clearAllButton.confirm:hover {
+  background-color: darkred;
+}
+
+.storyCompleted {
+  background-color: #d3d3d3; /* Light gray background */
+  color: #808080; /* Gray text color */
+}
+
+.storyAcceptanceCriteria ul, .storyHints ul {
+  font-size: unset; /* Unset font size for bulleted lists */
+  list-style-type: unset; /* Unset list style type */
+}
+
+.storyAcceptanceCriteria li, .storyHints li {
+  font-size: unset; /* Unset font size for list items */
+  list-style-type: unset; /* Unset list style type */
+}
