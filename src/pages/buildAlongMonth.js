@@ -111,14 +111,23 @@ function BuildAlongMonth() {
         <li style={listItemStyles}><a href="https://servicenownextexperience.github.io/labs/LAB2050-K24-Intro-to-Workspaces/overview" target="_blank"><u>Crafting Workspaces Like a Pro: A Hands-On Learning Adventure! Lab</u></a> </li>
           </ul>
         </div>
+
+        <div className={styles.uiBuilderSection}>
+        <h2>Share your Success!</h2>
+        <p>Keep us posted on your progress on Linkedin! We'd love to see what you make of this, so be sure to use these hashtags on your LinkedIn posts:</p><p> <code>#ServiceNow #ServiceNowDev #YIBL #BuildAlongMonth #UIBuilder</code> </p>
+        <p>If you have any feedback about the stories below, or want to contribute helpful links for any of them, drop by the slack channel linked above and let us know.</p>
+        </div>
+
+
         <div className={styles.uiBuilderSection}>
         <h2>Update set</h2>
         <p>Here is the update set you're going to need to load in to your instance to get the application files you can start with:</p>
         <ul style={listStyles}>
-        <li style={listItemStyles}><a href="src/pages/downloads/YIBL_BAM_Conference-Notes_v1.0.01.xml" download="YIBL_BAM_Conference-Notes_v1.0.01.xml"><u>Download Update Set - BAM Conference Notes v1.0.01 (Last updated 7.28.2024)</u></a>
+        <li style={listItemStyles}>Download Update Set - <a href="src/pages/downloads/YIBL_BAM_Conference-Notes_v1.0.01.xml" download="YIBL_BAM_Conference-Notes_v1.0.01.xml"><u>📝 BAM Conference Notes v1.0.01 (Last updated 7.28.2024)</u></a>
             </li>
         </ul>
         </div>
+
 
           <DevelopmentStories />
       </div>
