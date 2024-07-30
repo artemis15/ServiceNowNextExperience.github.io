@@ -1,0 +1,38 @@
+/* Adjust container padding */
+.container {
+    padding: 0 16px; /* Default padding for small screens */
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      padding: 0 24px; /* Padding for medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding: 0 32px; /* Padding for large screens */
+    }
+  }
+  
+  /* Flex item adjustments */
+  .flex-item {
+    flex: 1;
+    min-width: 200px; /* Minimum width to prevent excessive stretching */
+    max-width: 100%; /* Ensure items do not exceed container width */
+    box-sizing: border-box; /* Include padding and border in element’s total width and height */
+  }
+  
+  /* Media queries to handle different screen sizes */
+  @media (max-width: 1000px) {
+    .flex-item {
+      margin: 0 auto; /* Center items if needed */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .flex-item {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  }
+  
