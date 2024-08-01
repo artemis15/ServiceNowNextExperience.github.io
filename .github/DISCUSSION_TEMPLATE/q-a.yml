@@ -13,7 +13,6 @@ body:
       description: "Are you working on a specific story? Please provide the name of the story below."
       value: |
         Story: Create Form Entry Page
-      render: bash
     validations:
       required: true
   - type: textarea
