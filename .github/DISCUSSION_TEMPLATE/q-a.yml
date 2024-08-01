@@ -20,39 +20,29 @@ body:
     id: solving
     attributes:
       label: What are you trying to solve?
-      description: ""
-      render: bash
     validations:
       required: true
   - type: textarea
     id: expectation
     attributes:
       label: What do you expect to happen?
-      description: ""
-      render: bash
     validations:
       required: true
   - type: textarea
     id: observations
     attributes:
       label: What is happening from your observations?
-      description: ""
-      render: bash
     validations:
       required: false
   - type: textarea
     id: trouble
     attributes:
       label: What is the trouble you are encountering?
-      description: ""
-      render: bash
     validations:
       required: false
   - type: textarea
     id: tried
     attributes:
       label: What have you tried so far?
-      description: ""
-      render: bash
     validations:
       required: true      
