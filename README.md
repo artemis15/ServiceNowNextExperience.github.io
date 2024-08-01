@@ -4,7 +4,7 @@
 
 [![View site - GH Pages](https://img.shields.io/badge/View_site-sn.works/NEWorkshops-032D42?)](https://servicenownextexperience.github.io)
 
-![GitHub discussions custom search in repo](https://img.shields.io/github/discussions-search/ServiceNowNextExperience/ServiceNowNextExperience.github.io?query=category%3A%22Show%20and%20tell%22%20&label=Show%20and%20tell&color=FFDE1D) ![GitHub Discussions](https://img.shields.io/github/discussions/ServiceNowNextExperience/ServiceNowNextExperience.github.io?color=24C2CE) <a href="https://invite.sndevs.com"><img src="https://img.shields.io/badge/community-sndevs-630330?"></a> 
+[![GitHub discussions custom search in repo](https://img.shields.io/github/discussions-search/ServiceNowNextExperience/ServiceNowNextExperience.github.io?query=category%3A%22Show%20and%20tell%22%20&label=Show%20and%20tell&color=FFDE1D)](https://github.com/ServiceNowNextExperience/ServiceNowNextExperience.github.io/discussions/categories/show-and-tell) [![GitHub Discussions](https://img.shields.io/github/discussions/ServiceNowNextExperience/ServiceNowNextExperience.github.io?color=24C2CE)](https://github.com/ServiceNowNextExperience/ServiceNowNextExperience.github.io/discussions) <a href="https://invite.sndevs.com"><img src="https://img.shields.io/badge/community-sndevs-630330?"></a> 
 </div>
 
 # 👋 Welcome!
