@@ -122,3 +122,39 @@
   font-size: unset; /* Unset font size for list items */
   list-style-type: unset; /* Unset list style type */
 }
+
+.storyTitle {
+  display: flex;
+}
+
+.hintsIcon {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.hintsIcon:hover::after {
+  content: "Hints";
+  position: absolute;
+  background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+  top: -25px;
+  left: 10px;
+  white-space: nowrap;
+}
+
+.modalCloseButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #62D84E;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modalCloseButton:hover {
+  background-color: red;
+}
