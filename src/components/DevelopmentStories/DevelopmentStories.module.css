@@ -153,8 +153,15 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  align-self: flex-end;
 }
 
 .modalCloseButton:hover {
   background-color: red;
+}
+
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
 }

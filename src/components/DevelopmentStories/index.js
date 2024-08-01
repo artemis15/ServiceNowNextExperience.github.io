@@ -17,6 +17,8 @@ const customModalStyles = {
     marginLeft: '10%',
     marginRight: '10%',
     padding: '20px',
+    borderRadius: '5px',
+
   },
 };
 
@@ -115,9 +117,11 @@ const DevelopmentStories = () => {
         style={customModalStyles}
         contentLabel="Hints Modal"
       >
+                <div className={styles.modalContent}>
         <h2>Hints</h2>
         <div dangerouslySetInnerHTML={{ __html: currentHints }} />
         <button className={styles.modalCloseButton} onClick={closeModal}>Close</button>
+      </div>
       </Modal>
     </div>
   );
