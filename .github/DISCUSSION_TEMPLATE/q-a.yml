@@ -1,55 +1,58 @@
-title: "[Q&A] "
+title: "[QUESTION] "
 labels: ["Questions and Help"]
+
 body:
   - type: markdown
     attributes:
       value: |
-        This is text that will show up in the template!
-  - type: textarea
-    id: improvements
+        ### Please provide us with the following information to best help you. To get the best help, please be as descriptive as possible. Be sure to use good [question asking best practice](https://xyproblem.info/).
+  - type: input
+    id: story
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
+      label: Story
+      description: "Are you working on a specific story? Please provide the name of the story below."
       value: |
-        1.
-        2.
-        3.
-        ...
+        Story: Create Form Entry Page
       render: bash
     validations:
       required: true
-  - type: markdown
+  - type: textarea
+    id: solving
     attributes:
-      value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+      label: What are you trying to solve?
+      description: ""
+      render: bash
     validations:
       required: true
-  - type: dropdown
-    id: download
+  - type: textarea
+    id: expectation
     attributes:
-      label: Which area of this project could be most improved?
-      options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
+      label: What do you expect to happen?
+      description: ""
+      render: bash
     validations:
       required: true
-  - type: checkboxes
+  - type: textarea
+    id: observations
     attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
+      label: What is happening from your observations?
+      description: ""
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: trouble
     attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+      label: What is the trouble you are encountering?
+      description: ""
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried so far?
+      description: ""
+      render: bash
+    validations:
+      required: true      
