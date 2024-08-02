@@ -6,7 +6,8 @@
     "soThat": "I can easily and quickly access different functions of my app",
     "acceptanceCriteria": "The page has been created in UI Builder under the U&I Conference notes Workspace experience",
     "hints": ""
-  },
+    ,
+    "product": "UI Builder"},
   {
     "title": "Create page layout for Form Entry Page",
     "asA": "Conference attendee",
@@ -14,7 +15,8 @@
     "soThat": "I can navigate the page and functions of this application without frustration or hindrances",
     "acceptanceCriteria": "Create a page layout that is easy to use, feel free to get as creative as you'd like. You can do as much design or as little design as you want.",
     "hints": "<ul><li>It is recommended that for the fields you will be creating on this page in the following stories, you don't use the \"Form\" component. Instead, use input field components of the appropriate type. It will require you to create more configuration for all of that to work how you want it to work, but the Form component is more complex to use for this use case.</li><li>You might end up trying to use the Form component to do this, and that's ok! Give it a shot and figure out how it works, it's still a valid way to execute on this story. But if you get stuck, just go back to the previously suggested approach.</li></ul>"
-  },
+    ,
+    "product": "Other System"},
   {
     "title": "Add \"Name\" Field to Form Entry Page",
     "asA": "Conference attendee",
@@ -22,7 +24,8 @@
     "soThat": "I can enter the contact's name",
     "acceptanceCriteria": "The form entry page includes a \"Name\" field (string field, required).",
     "hints": ""
-  },
+    ,
+    "product": "UI Builder"},
   {
     "title": "Add \"Email\" Field to Form Entry Page",
     "asA": "Conference attendee",
@@ -30,7 +33,8 @@
     "soThat": "I can enter the contact's email address",
     "acceptanceCriteria": "The form entry page includes an \"Email\" field (string field, required, with email format validation).",
     "hints": ""
-  },
+    ,
+    "product": "Other System"},
   {
     "title": "Add \"Note\" Field to Form Entry Page",
     "asA": "Conference attendee",
@@ -38,7 +42,8 @@
     "soThat": "I can enter notes about the contact",
     "acceptanceCriteria": "The form entry page includes a \"Note\" field (string field, required).",
     "hints": ""
-  },
+    ,
+    "product": "UI Builder"},
   {
     "title": "Add \"Phone Number\" Field to Form Entry Page",
     "asA": "Conference attendee",
@@ -126,6 +131,8 @@
     "soThat": "the data is saved correctly in the table",
     "acceptanceCriteria": "<ul><li>The form captures input for all specified fields when you click \"Submit\"</li><li>Data is saved correctly in the ui_conference_notey table upon form submission.</li></ul>",
     "hints": ""
+       ,
+    "product": "UI Builder"
   },
   {
     "title": "Display Confirmation Message",
@@ -166,7 +173,8 @@
     "soThat": "I can have more information handy without needing to scroll through the form",
     "acceptanceCriteria": "The following fields are displayed below the contact's name on the contact record page: organization, job title, event name",
     "hints": "The Secondary Items component is in the header of the record page, under the Primary field label. This component gets its configuration from the form controller, but the secondary fields are picked outside of UI builder."
-  },
+    ,
+    "product": "Other System"},
   {
     "title": "Create new \"Contact tasks\" table",
     "asA": "Conference Attendee",
@@ -174,14 +182,18 @@
     "soThat": "I can keep track of what I have already done with the contact record",
     "acceptanceCriteria": "The contact tasks table should extend the Tasks table. You should be able to",
     "hints": ""
-  },
+    ,
+    "product": "Other System" },
   {
     "title": "Add contact tasks related list to the contact record page",
     "asA": "Conference Attendee",
     "iWantTo": "see a list of contact task records on the records page",
     "soThat": "I can see what my next steps are",
-    "acceptanceCriteria": "The contact tasks table related list should display next to the details tab on the record page.",
+    "acceptanceCriteria": "The contact tasks table related list should display next to the details tab on the record pageThe contact tasks table related list should display next to the details tab on the record pageThe contact tasks table related list should display next to the details tab on the record pageThe contact tasks table related list should display next to the details tab on the record pageThe contact tasks table related list should display next to the details tab on the record pageThe contact tasks table related list should display next to the details tab on the record page.",
     "hints": ""
+
+    ,
+    "product": "UI Builder"
   },
   {
     "title": "Landing Page configuration",
