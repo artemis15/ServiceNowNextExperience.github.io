@@ -55,18 +55,33 @@ const DevelopmentStories = () => {
     setCurrentHints('');
   };
 
+
+  const listStyles = {
+    listStyleType: 'disc',
+    paddingLeft: '20px',
+};
+
+const listItemStyles = {
+    marginBottom: '10px',
+};
   return (
     <div className={styles.storiesContainer}>
       <h1 className={styles.storiesTitle}>Stories</h1>
       <p className={styles.storyHints}>
-        Here are the stories we will be covering in the <a href="https://www.youtube.com/playlist?list=PL3rNcyAiDYK2Bgzj4mRdtfxMpGkI5KXBJ" target="_blank"><u>You & I Builder Live</u></a> livestreams. After the livestreams, we'll come back here and update the stories to show which video covers which stories and highlight the ones we didn't get to cover.
+        Some stories might have an ℹ️ icon next to their title. This opens the Hints mnodal, where we might provide some resources you can use to achieve your goals. It won't necessarily be something demonstrating the specific story you're working on, but it should demonstrate concepts related to the story that should help you get started.
       </p>
       <p className={styles.storyHints}>
-        <a href="https://www.youtube.com/live/1Hcr4odti6A?si=tP0jrwuH24Zxsj3f" target="_blank"><u>Livestream 1 - August 8th, 2024</u></a>
+        Here are the You & I Builder Live livestreams where you can watch us working through the UI Builder stories:
+        <ul style={listStyles}>
+            <li style={listItemStyles}>
+              <a href="https://www.youtube.com/live/1Hcr4odti6A?si=tP0jrwuH24Zxsj3f" target="_blank"><u>Livestream 1 - August 8th, 2024</u></a>
+            </li>
+            <li style={listItemStyles}>
+              <a href="https://www.youtube.com/live/0e8Xkr5okbM?si=Plz-xjZP-pxJRU3d" target="_blank"><u>Livestream 2 - August 22nd, 2024</u></a>
+            </li>
+        </ul>
       </p>
-      <p className={styles.storyHints}>
-        <a href="https://www.youtube.com/live/0e8Xkr5okbM?si=Plz-xjZP-pxJRU3d" target="_blank"><u>Livestream 2 - August 22nd, 2024</u></a>
-      </p>
+
       <button
         className={styles.clearAllButton}
         onClick={handleClearAll}
