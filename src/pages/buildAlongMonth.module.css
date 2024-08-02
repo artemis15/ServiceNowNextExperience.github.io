@@ -64,3 +64,9 @@
 .arrow {
     margin-left: auto;
 }
+.orderedList {
+    list-style-type: decimal; /* Ensures it's numbered */
+    padding-left: 20px; /* Adds some space on the left */
+    margin: 10px 0; /* Adds some margin above and below the list */
+  }
+  
