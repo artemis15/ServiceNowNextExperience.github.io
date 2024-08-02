@@ -171,7 +171,7 @@ function BuildAlongMonth() {
                     <div className={styles.uiBuilderSection}>
                         <p>Here is the update set you're going to need to load into your instance to get the application files you can start with:</p>
                         <ul style={listStyles}>
-                            <li style={listItemStyles}>Download Update Set - <a href="src/pages/downloads/YIBL_BAM_Conference-Notes_v1.0.01.xml" download="YIBL_BAM_Conference-Notes_v1.0.01.xml"><u>📝 BAM Conference Notes v1.0.01 (Last updated 7.28.2024)</u></a></li>
+                            <li style={listItemStyles}>Download Update Set - <a href="/downloads/YIBL_BAM_Conference-Notes_v1.0.01.xml" download="YIBL_BAM_Conference-Notes_v1.0.01.xml"><u>📝 BAM Conference Notes v1.0.01 (Last updated 7.28.2024)</u></a></li>
                         </ul>
                     </div>
                 </CollapsibleSection>
