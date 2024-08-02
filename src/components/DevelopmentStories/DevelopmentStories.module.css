@@ -165,3 +165,49 @@
   display: flex;
   flex-direction: column;
 }
+
+
+.storyCheckbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+.uiBuilderIcon {
+  color: #62D84E;
+  margin-top: 8px; /* Adjust margin as needed */
+}
+
+.uiBuilderIconParagraph {
+  color: #62D84E;
+  display: unset;
+}
+
+.storyAcceptanceCriteria {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.acceptanceCriteriaText {
+  flex: 1; /* Takes up available space */
+  text-align: left; /* Align text to the left */
+}
+
+.expandIcon {
+  cursor: pointer;
+  color: #62D84E;
+  margin-left: 8px;
+  position: absolute;
+  right: 0; /* Aligns the icon to the right of the container */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+}
+
+.expandIcon:hover {
+  color: #032D42;
+}

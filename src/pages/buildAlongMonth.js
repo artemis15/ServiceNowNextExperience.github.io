@@ -51,7 +51,7 @@ function BuildAlongMonth() {
                 <div className={styles.welcomeBanner}>
                     <h1>Introduction</h1>
 
-                    <p>For the month of August, You & I Builder Live will host “Build Along Month”, where developers will have the opportunity to follow along as Brad and Maria Gabriela build a ServiceNow application from scratch in UI Builder using  Agile methodology. </p>
+                    <p>For the month of August, <b>You & I Builder Live</b> will host “Build Along Month”, where developers will have the opportunity to follow along as Brad and Maria Gabriela build a ServiceNow application from scratch in UI Builder using  Agile methodology. </p>
 
                     <p>Our goal in “Build Along Month” is to help you:
                     <ul style={listStyles}>
@@ -68,6 +68,17 @@ function BuildAlongMonth() {
                         Prepare you for future job opportunities
                         </li>
                     </ul></p>
+                    <p className={styles.storyHints}>
+        Here are the livestreams where you can watch us working through the UI Builder stories:
+        <ul style={listStyles}>
+            <li style={listItemStyles}>
+              <a href="https://www.youtube.com/live/1Hcr4odti6A?si=tP0jrwuH24Zxsj3F" target="_blank"><u>Livestream 1 - August 8th, 2024</u></a>
+            </li>
+            <li style={listItemStyles}>
+              <a href="https://www.youtube.com/live/0e8Xkr5okbM?si=Plz-xjZP-pxJRU3d" target="_blank"><u>Livestream 2 - August 22nd, 2024</u></a>
+            </li>
+        </ul>
+      </p>
                     <h3>Contributing</h3>
                     <p>If you have any feedback about this project, want to contribute more stories, or want to provide helpful links for any of the stories below, drop by the <a href ="https://github.com/ServiceNowNextExperience/ServiceNowNextExperience.github.io/discussions"><u>discussions section</u></a> of this github repository and let us know. Please use labels to tag your posts appropriately, and thanks in advance!</p>
                 </div>
@@ -176,8 +187,9 @@ function BuildAlongMonth() {
                                 <li className={styles.listItem}>Go to the "All menu".</li>
                                 <li className={styles.listItem}>Type in "Plugins".</li>
                                 <li className={styles.listItem}>Select the "Plugins" application menu item under "System definition".</li>
+                                <li className={styles.listItem}>To make sure you have the most recent version from the Store, click the "Sync now" button.</li>
                                 <li className={styles.listItem}>Type "UI Builder" in to the search bar. </li>
-                                <li className={styles.listItem}>UI Builder will show up under the "Updates" tab of the Application Manager. To make sure you have the most recent version, click the "Sync now" button.</li>
+                                <li className={styles.listItem}>If there are updates, UI Builder will show up under the "Updates" tab of the Application Manager.</li>
                             </ol>
                         </p>
 

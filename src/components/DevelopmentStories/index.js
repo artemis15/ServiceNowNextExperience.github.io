@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
+import { FaFileAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Import icons for dropdown
 import styles from './DevelopmentStories.module.css';
 
 // Sample data import from a spreadsheet (assuming it's converted to a JSON format)
@@ -9,16 +10,14 @@ import storiesData from './storiesData.json';
 const customModalStyles = {
   content: {
     top: '50%',
-    left: '40%',
+    left: '50%',
     right: 'auto',
     bottom: 'auto',
-    marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    marginLeft: '10%',
-    marginRight: '10%',
     padding: '20px',
     borderRadius: '5px',
-
+    marginLeft: '10%',
+    marginRight: '10%',
   },
 };
 
@@ -26,6 +25,7 @@ const DevelopmentStories = () => {
   const [completedStories, setCompletedStories] = useState({});
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentHints, setCurrentHints] = useState('');
+  const [expandedStories, setExpandedStories] = useState({}); // State to manage expanded rows
 
   useEffect(() => {
     const savedState = JSON.parse(localStorage.getItem('completedStories')) || {};
@@ -55,33 +55,20 @@ const DevelopmentStories = () => {
     setCurrentHints('');
   };
 
+  const toggleExpand = (index) => {
+    setExpandedStories((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
-  const listStyles = {
-    listStyleType: 'disc',
-    paddingLeft: '20px',
-};
-
-const listItemStyles = {
-    marginBottom: '10px',
-};
   return (
     <div className={styles.storiesContainer}>
       <h1 className={styles.storiesTitle}>Stories</h1>
       <p className={styles.storyHints}>
-        Some stories might have an ℹ️ icon next to their title. This opens the Hints mnodal, where we might provide some resources you can use to achieve your goals. It won't necessarily be something demonstrating the specific story you're working on, but it should demonstrate concepts related to the story that should help you get started.
+        Stories with a <FaFileAlt className={styles.uiBuilderIconParagraph} title="UI Builder Story" /> (green document) icon are UI Builder stories and are going to be covered as part of the <b>You & I Builder Live</b> livestreams. </p><p>
+        Some stories might have an ℹ️ icon next to their title. This opens the Hints modal, where we might provide some resources you can use to achieve your goals. It won't necessarily be something demonstrating the specific story you're working on, but it should demonstrate concepts related to the story that should help you get started.
       </p>
-      <p className={styles.storyHints}>
-        Here are the You & I Builder Live livestreams where you can watch us working through the UI Builder stories:
-        <ul style={listStyles}>
-            <li style={listItemStyles}>
-              <a href="https://www.youtube.com/live/1Hcr4odti6A?si=tP0jrwuH24Zxsj3f" target="_blank"><u>Livestream 1 - August 8th, 2024</u></a>
-            </li>
-            <li style={listItemStyles}>
-              <a href="https://www.youtube.com/live/0e8Xkr5okbM?si=Plz-xjZP-pxJRU3d" target="_blank"><u>Livestream 2 - August 22nd, 2024</u></a>
-            </li>
-        </ul>
-      </p>
-
       <button
         className={styles.clearAllButton}
         onClick={handleClearAll}
@@ -105,6 +92,9 @@ const listItemStyles = {
                 checked={!!completedStories[index]}
                 onChange={() => handleCheckboxChange(index)}
               />
+              {story.product === 'UI Builder' && (
+                <FaFileAlt className={styles.uiBuilderIcon} title="UI Builder Story" />
+              )}
             </div>
             <div className={styles.storyTitle}>
               {story.title}
@@ -121,7 +111,23 @@ const listItemStyles = {
             <div className={styles.storyAsA}>{story.asA}</div>
             <div className={styles.storyIWantTo}>{story.iWantTo}</div>
             <div className={styles.storySoThat}>{story.soThat}</div>
-            <div className={styles.storyAcceptanceCriteria} dangerouslySetInnerHTML={{ __html: story.acceptanceCriteria }}></div>
+            <div className={styles.storyAcceptanceCriteria}>
+              <div className={styles.acceptanceCriteriaText}>
+                {expandedStories[index] ? (
+                  <div>
+                    <div dangerouslySetInnerHTML={{ __html: story.acceptanceCriteria }}></div>
+                    <FaChevronUp className={styles.expandIcon} onClick={() => toggleExpand(index)} />
+                  </div>
+                ) : (
+                  <div>
+                    <div dangerouslySetInnerHTML={{ __html: story.acceptanceCriteria.substring(0, 200) + (story.acceptanceCriteria.length > 200 ? '...' : '') }}></div>
+                    {story.acceptanceCriteria.length > 200 && (
+                      <FaChevronDown className={styles.expandIcon} onClick={() => toggleExpand(index)} />
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         ))}
       </div>
@@ -132,11 +138,11 @@ const listItemStyles = {
         style={customModalStyles}
         contentLabel="Hints Modal"
       >
-                <div className={styles.modalContent}>
-        <h2>Hints</h2>
-        <div dangerouslySetInnerHTML={{ __html: currentHints }} />
-        <button className={styles.modalCloseButton} onClick={closeModal}>Close</button>
-      </div>
+        <div className={styles.modalContent}>
+          <h2>Hints</h2>
+          <div dangerouslySetInnerHTML={{ __html: currentHints }} />
+          <button className={styles.modalCloseButton} onClick={closeModal}>Close</button>
+        </div>
       </Modal>
     </div>
   );
