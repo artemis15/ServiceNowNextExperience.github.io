@@ -1,55 +1,47 @@
-title: "[Q&A] "
+title: "[QUESTION] "
 labels: ["Questions and Help"]
+
 body:
   - type: markdown
     attributes:
       value: |
-        This is text that will show up in the template!
-  - type: textarea
-    id: improvements
-    attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
-      value: |
-        1.
-        2.
-        3.
-        ...
-      render: bash
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        ## Markdown header
-        And some more markdown
+        ### Please provide us with the following information to best help you. To get the best help, please be as descriptive as possible. Be sure to use good [question asking best practice](https://xyproblem.info/).
   - type: input
-    id: has-id
+    id: story
     attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
-    validations:
-      required: true
-  - type: dropdown
-    id: download
-    attributes:
-      label: Which area of this project could be most improved?
-      options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
-    validations:
-      required: true
-  - type: checkboxes
-    attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
+      label: Story
+      description: "Are you working on a specific story? Please provide the name of the story below."
       value: |
-        ### The thrilling conclusion
-        _to our template_
+        Story: Create Form Entry Page
+    validations:
+      required: true
+  - type: textarea
+    id: solving
+    attributes:
+      label: What are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: What do you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: observations
+    attributes:
+      label: What is happening from your observations?
+    validations:
+      required: false
+  - type: textarea
+    id: trouble
+    attributes:
+      label: What is the trouble you are encountering?
+    validations:
+      required: false
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried so far?
+    validations:
+      required: true      
