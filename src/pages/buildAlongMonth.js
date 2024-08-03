@@ -184,11 +184,11 @@ function BuildAlongMonth() {
                         <p> Follow these instructions to update UI Builder from the Application Manager:
 
                             <ol className={styles.orderedList}>
-                                <li className={styles.listItem}>Go to the "All menu".</li>
+                                <li className={styles.listItem}>Go to the "All" menu.</li>
                                 <li className={styles.listItem}>Type in "Plugins".</li>
-                                <li className={styles.listItem}>Select the "Plugins" application menu item under "System definition".</li>
+                                <li className={styles.listItem}>Select the "Plugins" application menu item under "System Definition".</li>
                                 <li className={styles.listItem}>To make sure you have the most recent version from the Store, click the "Sync now" button.</li>
-                                <li className={styles.listItem}>Type "UI Builder" in to the search bar. </li>
+                                <li className={styles.listItem}>Type "UI Builder" into the search bar. The plugin name is <code>sn-ui-builder</code>.</li>
                                 <li className={styles.listItem}>If there are updates, UI Builder will show up under the "Updates" tab of the Application Manager.</li>
                             </ol>
                         </p>
