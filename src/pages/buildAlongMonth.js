@@ -3,6 +3,8 @@ import Layout from '@theme/Layout';
 import DevelopmentStories from '../components/DevelopmentStories'; // Adjust the path as necessary
 import styles from './buildAlongMonth.module.css'; // Make sure to create a corresponding CSS module file
 import clsx from 'clsx';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 
 function BAMHeader() {
     return (
@@ -41,7 +43,8 @@ function CollapsibleSection({ title, children }) {
     );
 }
 
-function BuildAlongMonth() {
+export default function BuildAlongMonth() {
+    const {siteConfig} = useDocusaurusContext();
     return (
         <Layout title="Build Along Month">
             <BAMHeader />
@@ -219,5 +222,3 @@ function BuildAlongMonth() {
         </Layout>
     );
 }
-
-export default BuildAlongMonth;

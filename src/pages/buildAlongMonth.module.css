@@ -71,3 +71,7 @@
     margin: 10px 0; /* Adds some margin above and below the list */
   }
   
+
+[data-theme="dark"] h3 {
+    color:#62D84E;
+  }

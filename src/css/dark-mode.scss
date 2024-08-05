@@ -55,7 +55,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 [data-theme='dark'] h5,
 [data-theme='dark'] h6,
 [data-theme='dark'] p {
-  color: var(--servicenow-brand-blue);
+  color: #62D84E;
 }
 [data-theme='dark'] div.theme-doc-markdown.markdown h1,
 [data-theme='dark'] div.theme-doc-markdown.markdown h2,
@@ -85,4 +85,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 [data-theme='dark'] .pagination-nav__link {
   background-color: var(--footer-gray);
+}
+[data-theme="dark"] h1, h2, h3 {
+  color:#62D84E;
 }
