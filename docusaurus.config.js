@@ -170,11 +170,11 @@ const config = {
           },
           
           {to: '/blog', label: 'Blog', position: 'left'},*/
-         /*{
+         {
             label: 'Build Along Month',
             to: '/buildAlongMonth',
             position: 'left',
-          },*/
+          },
           {
             label: 'Developer',
             href: 'https://developer.servicenow.com/',
@@ -318,12 +318,15 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} ServiceNow`,
       },
       colorMode: {
-        disableSwitch: true,  // Disable the switch to prevent users from changing the theme
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
-      /*\\prism: {
+      prism: {
         theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },*/
+        defaultLanguage: 'javascript',
+
+      },
     }),
 };
 
