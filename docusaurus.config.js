@@ -318,7 +318,6 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} ServiceNow`,
       },
       colorMode: {
-        defaultMode: 'light', // Set the default mode to light
         disableSwitch: true,  // Disable the switch to prevent users from changing the theme
       },
       /*\\prism: {
