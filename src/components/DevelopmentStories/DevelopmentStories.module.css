@@ -63,6 +63,8 @@
   text-align: left;
   flex: 1; /* Ensures equal width for columns */
   padding-right: 8px; /* Adjusts for text length */
+  justify-content: space-between;
+
 }
 
 .storyItem {
