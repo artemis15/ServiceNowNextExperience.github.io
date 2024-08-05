@@ -75,6 +75,35 @@
   background-color: #f2f2f2;
 }
 
+[data-theme="dark"] .storyItem {
+  background-color: #032D42;
+  color: #fff;
+  li {
+    color: #fff;
+  }
+}
+
+[data-theme="dark"] .storyItemAlt {
+  color: #fff;
+  background-color: #031721;
+
+  li {
+    color: #fff;
+  }
+}
+
+[data-theme="dark"] .storyTitle,
+.storyAsA,
+.storyIWantTo,
+.storySoThat,
+.storyAcceptanceCriteria,
+.storyHints {
+  color: #fff;
+}
+
+
+
+
 .storyCheckbox {
   display: flex;
   align-items: center; /* Align checkboxes to the center */
@@ -168,6 +197,15 @@
   flex-direction: column;
 }
 
+
+
+[data-theme="dark"] .modalContent p {
+
+    color: #032D42;
+    li {
+      color: #032D42;
+    }
+}
 
 .storyCheckbox {
   display: flex;
