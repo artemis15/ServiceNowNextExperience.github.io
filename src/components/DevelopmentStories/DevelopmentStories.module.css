@@ -78,18 +78,21 @@
 [data-theme="dark"] .storyItem {
   background-color: #032D42;
   color: #fff;
-  li {
-    color: #fff;
-  }
+
+}
+
+
+[data-theme="dark"] .storyItem li {
+  color: #fff;
 }
 
 [data-theme="dark"] .storyItemAlt {
   color: #fff;
   background-color: #031721;
+}
 
-  li {
-    color: #fff;
-  }
+[data-theme="dark"] .storyItemAlt li {
+  color: #fff;
 }
 
 [data-theme="dark"] .storyTitle,
@@ -142,6 +145,11 @@
 .storyCompleted {
   background-color: #d3d3d3; /* Light gray background */
   color: #808080; /* Gray text color */
+}
+
+[data-theme="dark"] .storyCompleted {
+  background-color: #000; /* Light gray background */
+  color: #444444; /* Gray text color */
 }
 
 .storyAcceptanceCriteria ul, .storyHints ul {
