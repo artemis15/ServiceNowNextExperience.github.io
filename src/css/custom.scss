@@ -137,11 +137,14 @@ p img {
   max-width: 100%;
 }
 
-[data-theme="dark"] h1 {
+[data-theme="dark"] h1, h2, h3 {
   @apply text-nowwasabi;
 }
 
 [data-theme="dark"] p {
+  @apply text-white;
+}
+[data-theme="dark"] li {
   @apply text-white;
 }
 /*------ BUTTONS ------*/
