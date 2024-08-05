@@ -210,10 +210,11 @@
 [data-theme="dark"] .modalContent p {
 
     color: #032D42;
-    li {
-      color: #032D42;
-    }
-}
+  }
+
+  [data-theme="dark"] .modalContent p li {
+    color: #032D42;
+  }
 
 .storyCheckbox {
   display: flex;
