@@ -1,7 +1,7 @@
-.questionsSection, .needToKnowSection, .storySection, .uiBuilderSection, .storiesSection a{
-  
+.questionsSection, .needToKnowSection, .storySection, .uiBuilderSection, .storiesSection {
+  a {
         text-decoration: underline;
-    
+  }   
 }
 
 /* buildAlongMonth.module.css */

@@ -53,7 +53,7 @@ function BuildAlongMonth() {
 
                     <p>For the month of August, <b>You & I Builder Live</b> will host “Build Along Month”, where developers will have the opportunity to follow along as Brad and Maria Gabriela build a ServiceNow application from scratch in UI Builder using  Agile methodology. </p>
 
-                    <p>Our goal in “Build Along Month” is to help you:
+                    <p>Our goal in “Build Along Month” is to help you:</p>
                     <ul style={listStyles}>
                     <li style={listItemStyles}>
                         Become more familiar with UI Builder 
@@ -67,18 +67,18 @@ function BuildAlongMonth() {
                         <li style={listItemStyles}>
                         Prepare you for future job opportunities
                         </li>
-                    </ul></p>
+                    </ul>
                     <p className={styles.storyHints}>
-        Here are the livestreams where you can watch us working through the UI Builder stories:
-        <ul style={listStyles}>
-            <li style={listItemStyles}>
-              <a href="https://www.youtube.com/live/1Hcr4odti6A?si=tP0jrwuH24Zxsj3F" target="_blank"><u>Livestream 1 - August 8th, 2024</u></a>
-            </li>
-            <li style={listItemStyles}>
-              <a href="https://www.youtube.com/live/0e8Xkr5okbM?si=Plz-xjZP-pxJRU3d" target="_blank"><u>Livestream 2 - August 22nd, 2024</u></a>
-            </li>
-        </ul>
-      </p>
+                        Here are the livestreams where you can watch us working through the UI Builder stories:</p>
+                        <ul style={listStyles}>
+                            <li style={listItemStyles}>
+                            <a href="https://www.youtube.com/live/1Hcr4odti6A?si=tP0jrwuH24Zxsj3F" target="_blank"><u>Livestream 1 - August 8th, 2024</u></a>
+                            </li>
+                            <li style={listItemStyles}>
+                            <a href="https://www.youtube.com/live/0e8Xkr5okbM?si=Plz-xjZP-pxJRU3d" target="_blank"><u>Livestream 2 - August 22nd, 2024</u></a>
+                            </li>
+                        </ul>
+                    
                     <h3>Contributing</h3>
                     <p>If you have any feedback about this project, want to contribute more stories, or want to provide helpful links for any of the stories below, drop by the <a href ="https://github.com/ServiceNowNextExperience/ServiceNowNextExperience.github.io/discussions"><u>discussions section</u></a> of this github repository and let us know. Please use labels to tag your posts appropriately, and thanks in advance!</p>
                 </div>
@@ -86,7 +86,7 @@ function BuildAlongMonth() {
                 <CollapsibleSection title="Project Approach">
                 <div className={styles.questionsSection}>
 
-                    <p>You can approach this project in one of two ways: 
+                    <p>You can approach this project in one of two ways: </p>
                     <ul style={listStyles}>
                         <li style={listItemStyles}>
                         Attempt to build the application using the stories* below in the order they are outlined on your own, and if you get stuck you can watch the livestreams provided. 
@@ -94,7 +94,7 @@ function BuildAlongMonth() {
                         <li style={listItemStyles}>
                         Watch the videos first to get a sense of what we are doing, then go and build your own application using the stories below. 
                         </li>
-                    </ul></p>
+                    </ul>
                     <p>Whichever way you decide to go about it, you are free to complete this project as you wish: either stick to the letter of the requirement or go above and beyond what you're being asked to do. Be as creative as you want to be, or just build a baseline application. This project is what you make of it – it's all up to you! </p>
                     <p><i>*See the “What is a story?” section below if you are not yet familiar with this term. </i></p>
                 </div>
@@ -103,7 +103,7 @@ function BuildAlongMonth() {
                 <CollapsibleSection title="Preparation">
                     <div className={styles.questionsSection}>
 
-                        <p>If you are brand new to the ServiceNow platform and/or UI Builder, you will most likely have trouble using the stories below right away. We are making a few assumptions as we write this, and we expect you are familiar with: 
+                        <p>If you are brand new to the ServiceNow platform and/or UI Builder, you will most likely have trouble using the stories below right away. We are making a few assumptions as we write this, and we expect you are familiar with: </p>
 
                         <ul style={listStyles}>
                             <li style={listItemStyles}><b>ServiceNow Administration</b> - You either have your Certified System Administrator Certification or have 3-6 months of working in a ServiceNow Administrator capacity. The tasks below will expect you to be familiar with the platform, but especially UI Builder. You can attempt the tasks using whichever tools you are most comfortable using, for example if you prefer App Engine Studio then go for it, but if you don't want to use AES you don't have to. </li>
@@ -116,7 +116,8 @@ function BuildAlongMonth() {
                                     <li style={listItemStyles}><a href="https://servicenownextexperience.github.io/labs/LAB2050-K24-Intro-to-Workspaces/overview" target="_blank"><u>Crafting Workspaces Like a Pro: A Hands-On Learning Adventure! Lab</u></a></li>
                                 </ul>
                             </li>
-                        </ul></p>
+                        </ul>
+                        
                     </div>
                 </CollapsibleSection>
 
@@ -137,7 +138,7 @@ function BuildAlongMonth() {
                         
                         <p>The stories provided below aren't going to give you all the information you need, nor will they walk you through each task step by step like a lab guide typically does. It's up to you to google and do research to achieve the desired results, just like if you were receiving tasks to do at your job. Some of the stories will provide a help link or some extra guidance, but for the most part it's time to practice your Google-Fu! </p>
 
-                        <p> Another good place to highlight is the SNDevs slack server. You can grab an invite by going to <a href="https://SNDevs.com" target="_blank"><u>SNDevs.com</u></a>. Once you have your account created, here's the two channels you should check out. Be sure to link to this page when you ask questions over there so people know what they're helping you with.
+                        <p> Another good place to highlight is the SNDevs slack server. You can grab an invite by going to <a href="https://SNDevs.com" target="_blank"><u>SNDevs.com</u></a>. Once you have your account created, here's the two channels you should check out. Be sure to link to this page when you ask questions over there so people know what they're helping you with.</p>
                         <ul style={listStyles}>
                         <li style={listItemStyles}>
                             <code>#next-experience-uib-workspace</code> - for asking questions about UI Builder/Workspace related issues.
@@ -145,9 +146,9 @@ function BuildAlongMonth() {
                             <li style={listItemStyles}><code>#you-and-i-build-along-month</code> - for help on any of the extra, non-UI Builder related stories.
                             </li>
                         </ul>
-</p>
 
-                        <p>Important things to include in your posts:
+
+                        <p>Important things to include in your posts: </p>
                         <ul style={listStyles}>
                             <li style={listItemStyles}>
                                 What are you trying to solve? 
@@ -165,7 +166,7 @@ function BuildAlongMonth() {
                                 What have you tried so far? 
                                 </li>
                         </ul>
-                                 </p>
+                                
                     </div>
                 </CollapsibleSection>
                
@@ -181,7 +182,7 @@ function BuildAlongMonth() {
                     <div className={styles.uiBuilderSection}>
                         <p>You can build this application on any instance you would like, including your PDI, you just need to prepare a few things. First you need to download the Update Set and commit it in your instance, and next you should make sure that UI Builder is on the latest version. Ideally you will use this project on an instance that is on the Xanadu version or above, and make sure you upgrade your UI Builder plugin from the Application manager. </p>
                         <h3>UI Builder</h3>
-                        <p> Follow these instructions to update UI Builder from the Application Manager:
+                        <p> Follow these instructions to update UI Builder from the Application Manager:</p>
 
                             <ol className={styles.orderedList}>
                                 <li className={styles.listItem}>Go to the "All" menu.</li>
@@ -191,16 +192,16 @@ function BuildAlongMonth() {
                                 <li className={styles.listItem}>Type "UI Builder" into the search bar. The plugin name is <code>sn-ui-builder</code>.</li>
                                 <li className={styles.listItem}>If there are updates, UI Builder will show up under the "Updates" tab of the Application Manager.</li>
                             </ol>
-                        </p>
+                        
 
                         <h3>Update set</h3>
-                        <p>Here is the update set you're going to need to load into your instance to get the application files you can start with:
-                        <ul style={listStyles}>
-                        <li style={listItemStyles}>Download Update Set - <a href="https://servicenownextexperience.github.io/downloads/YIBL_BAM_Conference-Notes_v1.0.01.zip" download="YIBL_BAM_Conference-Notes_v1.0.01.zip"><u>📝 BAM Conference Notes v1.0.01 (Last updated 7.28.2024)</u></a></li>
-                        </ul>
-                        </p>
+                        <p>Here is the update set you're going to need to load into your instance to get the application files you can start with: </p>
+                            <ul style={listStyles}>
+                                <li style={listItemStyles}>Download Update Set - <a href="https://servicenownextexperience.github.io/downloads/YIBL_BAM_Conference-Notes_v1.0.01.zip" download="YIBL_BAM_Conference-Notes_v1.0.01.zip"><u>📝 BAM Conference Notes v1.0.01 (Last updated 7.28.2024)</u></a></li>
+                            </ul>
+                       
 
-                        <p>In case you are unfamiliar or need a refresher, here are some helpful instructions on how to upload and commit a remote update set:
+                        <p>In case you are unfamiliar or need a refresher, here are some helpful instructions on how to upload and commit a remote update set:</p>
                             <ul style={listStyles}>
                             <li style={listItemStyles}>
                                 <a href="https://docs.servicenow.com/bundle/xanadu-application-development/page/build/system-update-sets/task/t_PreviewARemoteUpdateSet.html">Preview a remote update set</a>
@@ -209,7 +210,7 @@ function BuildAlongMonth() {
                                 <a href="https://docs.servicenow.com/bundle/xanadu-application-development/page/build/system-update-sets/task/t_CommitAnUpdateSet.html">Commit a remote update set</a>
                                 </li>
                             </ul>
-                        </p>
+                        
                     </div>
                 </CollapsibleSection>
 
