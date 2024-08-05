@@ -66,7 +66,7 @@ const DevelopmentStories = () => {
     <div className={styles.storiesContainer}>
       <h1 className={styles.storiesTitle}>Stories</h1>
       <p className={styles.storyHints}>
-        Stories with a <FaFileAlt className={styles.uiBuilderIconParagraph} title="UI Builder Story" /> (green document) icon are UI Builder stories, most are going to be covered as part of the <b>You & I Builder Live</b> livestreams. </p><p>
+        Stories with a 🔩 (nuts and bolt) icon are UI Builder stories, most are going to be covered as part of the <b>You & I Builder Live</b> livestreams. </p><p>
         Some stories might have an ℹ️ icon next to their title. This opens the Hints modal, where we might provide some resources you can use to achieve your goals. It won't necessarily be something demonstrating the specific story you're working on, but it should demonstrate concepts related to the story that should help you get started.
       </p>
       <button
@@ -93,7 +93,7 @@ const DevelopmentStories = () => {
                 onChange={() => handleCheckboxChange(index)}
               />
               {story.product === 'UI Builder' && (
-                <FaFileAlt className={styles.uiBuilderIcon} title="UI Builder Story" />
+                <span className={styles.uiBuilderIcon} title="UI Builder Story">🔩</span>
               )}
             </div>
             <div className={styles.storyTitle}>

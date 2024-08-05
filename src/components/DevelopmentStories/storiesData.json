@@ -45,9 +45,9 @@
     "product": "UI Builder"
   },
   {
-    "title": "STRY0005: Add 'Create Another Entry' Button below confirmation message",
+    "title": "STRY0005: Add \"Create Another Entry\" Button below confirmation message",
     "asA": "Conference attendee",
-    "iWantTo": "See 'Create another entry' button after the confirmation message",
+    "iWantTo": "See \"Create another entry\" button after the confirmation message",
     "soThat": "I can quickly add a new record after saving previous record",
     "acceptanceCriteria": "<ul><li>A \"Create another entry\" button appears after the confirmation message.</li><li>Clicking the button resets the form for a new entry.</li></ul>",
     "hints": "This should live inside the modal we created in the last story.",
@@ -81,7 +81,7 @@
     "product": ""
   },
   {
-    "title": "STRY0009: Create new 'Contact tasks' table",
+    "title": "STRY0009: Create new \"Contact tasks\" table",
     "asA": "Conference attendee",
     "iWantTo": "Be able to assign myself tasks to do for each contact",
     "soThat": "I can keep track of what I have already done with the contact record",
@@ -108,7 +108,7 @@
     "product": "UI Builder"
   },
   {
-    "title": "STRY0012: Configure 'Greeting' notification",
+    "title": "STRY0012: Configure Greeting notification",
     "asA": "Conference attendee",
     "iWantTo": "Have an email be sent out to the contact once it's created",
     "soThat": "I can share my contact information and other details with the contact I added",
@@ -135,7 +135,7 @@
     "product": ""
   },
   {
-    "title": "STRY0015: Create 'Conference App User' group",
+    "title": "STRY0015: Create \"Conference App User\" group",
     "asA": "ServiceNow Admin",
     "iWantTo": "Have a group created for this app",
     "soThat": "Managing this app's users and roles is easier",
@@ -144,7 +144,7 @@
     "product": ""
   },
   {
-    "title": "STRY0016: Assign 'Conference App User' group the 'x_snc_bam_you_i_0.user' role",
+    "title": "STRY0016: Assign \"Conference App User\" group the \"x_snc_bam_you_i_0.user\" role",
     "asA": "ServiceNow Admin",
     "iWantTo": "Assign this role to the group",
     "soThat": "I can manage users and roles using best practice",
@@ -153,7 +153,7 @@
     "product": ""
   },
   {
-    "title": "STRY0017: Add Chuck Tomasi to 'Conference App User' group",
+    "title": "STRY0017: Add Chuck Tomasi to \"Conference App User\" group",
     "asA": "ServiceNow Admin",
     "iWantTo": "Assign Chuck to this group",
     "soThat": "I can learn how to assign users to groups",
@@ -166,7 +166,7 @@
     "asA": "End user",
     "iWantTo": "Ask for access to this application",
     "soThat": "I can track the contact information of people I meet at events",
-    "acceptanceCriteria": "Catalog item should be created to request access to the 'Conference App User' group.",
+    "acceptanceCriteria": "Catalog item should be created to request access to the \"Conference App User\" group.",
     "hints": "You won't be able to access this through your workspace, and you won't find yourself using it at all, but you should be familiar with creating Catalog Items and this is an example of what they are used for.",
     "product": ""
   },
@@ -184,8 +184,8 @@
     "asA": "ServiceNow Admin",
     "iWantTo": "Provide navigation access for my app's custom tables",
     "soThat": "It's easier for me to go in and see the data.",
-    "acceptanceCriteria": "The application menu should be called 'U&I Conference Notes'.",
-    "hints": "Sometimes it feels like everything in ServiceNow is called an 'Application'. The ones we are referring to in this case are the navigation menu items that you can find under the 'All' menu. They are not created when you create a custom table/app from App Engine Studio, which leaves AES as the only place to easily access your tables.",
+    "acceptanceCriteria": "The application menu should be called \"U&I Conference Notes\".",
+    "hints": "Sometimes it feels like everything in ServiceNow is called an vApplication\". The ones we are referring to in this case are the navigation menu items that you can find under the 'All' menu. They are not created when you create a custom table/app from App Engine Studio, which leaves AES as the only place to easily access your tables.",
     "product": ""
   },
   {
@@ -193,7 +193,7 @@
     "asA": "Conference attendee",
     "iWantTo": "Provide navigation access for my app's custom tables",
     "soThat": "It's easier for me to go in and see the data.",
-    "acceptanceCriteria": "Under the 'U&I Conference Notes' application menu item, there should be the following:<ul><li>All Contacts</li><li>All Contact Tasks</li></ul>",
+    "acceptanceCriteria": "Under the \"U&I Conference Notes\" application menu item, there should be the following:<ul><li>All Contacts</li><li>All Contact Tasks</li></ul>",
     "hints": "",
     "product": ""
   },
