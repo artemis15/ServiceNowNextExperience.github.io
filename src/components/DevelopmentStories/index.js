@@ -142,7 +142,8 @@ const DevelopmentStories = () => {
           <h2>Hints</h2>
           <p>
           <div dangerouslySetInnerHTML={{ __html: currentHints }} />
-          </p><button className={styles.modalCloseButton} onClick={closeModal}>Close</button>
+          </p>
+          <button className={styles.modalCloseButton} onClick={closeModal}>Close</button>
         </div>
       </Modal>
     </div>
