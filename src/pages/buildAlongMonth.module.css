@@ -1,9 +1,10 @@
-.questionsSection, .needToKnowSection, .storySection, .uiBuilderSection, .storiesSection {
-  a {
-        text-decoration: underline;
-  }   
+.questionsSection a,
+.needToKnowSection a,
+.storySection a,
+.uiBuilderSection a,
+.storiesSection a {
+  text-decoration: underline;
 }
-
 /* buildAlongMonth.module.css */
 .heroBanner {
     text-align: center;
