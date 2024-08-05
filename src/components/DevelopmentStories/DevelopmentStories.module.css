@@ -1,3 +1,25 @@
+
+[data-theme="dark"] .storyItem {
+  background-color: #032D42;
+  color: #fff;
+
+}
+
+
+[data-theme="dark"] .storyItem li {
+  color: #fff;
+}
+
+[data-theme="dark"] .storyItemAlt {
+  color: #fff;
+  background-color: #031721;
+}
+
+[data-theme="dark"] .storyItemAlt li {
+  color: #fff;
+}
+
+
 .storiesContainer {
   padding-top: 20px;
 }
@@ -59,7 +81,6 @@
 .storySoThat,
 .storyAcceptanceCriteria,
 .storyHints {
-  color: #032D42;
   text-align: left;
   flex: 1; /* Ensures equal width for columns */
   padding-right: 8px; /* Adjusts for text length */
@@ -69,41 +90,14 @@
 
 .storyItem {
   background-color: #FFFFFF;
+  color: #032D42;
 }
 
 .storyItemAlt {
   background-color: #f2f2f2;
-}
-
-[data-theme="dark"] .storyItem {
-  background-color: #032D42;
-  color: #fff;
+  color: #032D42;
 
 }
-
-
-[data-theme="dark"] .storyItem li {
-  color: #fff;
-}
-
-[data-theme="dark"] .storyItemAlt {
-  color: #fff;
-  background-color: #031721;
-}
-
-[data-theme="dark"] .storyItemAlt li {
-  color: #fff;
-}
-
-[data-theme="dark"] .storyTitle,
-.storyAsA,
-.storyIWantTo,
-.storySoThat,
-.storyAcceptanceCriteria,
-.storyHints {
-  color: #fff;
-}
-
 
 
 
