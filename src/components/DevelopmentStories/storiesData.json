@@ -185,7 +185,7 @@
     "iWantTo": "Provide navigation access for my app's custom tables",
     "soThat": "It's easier for me to go in and see the data.",
     "acceptanceCriteria": "The application menu should be called \"U&I Conference Notes\".",
-    "hints": "Sometimes it feels like everything in ServiceNow is called an vApplication\". The ones we are referring to in this case are the navigation menu items that you can find under the 'All' menu. They are not created when you create a custom table/app from App Engine Studio, which leaves AES as the only place to easily access your tables.",
+    "hints": "Sometimes it feels like everything in ServiceNow is called an \"Application\". The ones we are referring to in this case are the navigation menu items that you can find under the 'All' menu. They are not created when you create a custom table/app from App Engine Studio, which leaves AES as the only place to easily access your tables.",
     "product": ""
   },
   {

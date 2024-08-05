@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
-import { FaFileAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Import icons for dropdown
 import styles from './DevelopmentStories.module.css';
 
 // Sample data import from a spreadsheet (assuming it's converted to a JSON format)
@@ -116,13 +115,13 @@ const DevelopmentStories = () => {
                 {expandedStories[index] ? (
                   <div>
                     <div dangerouslySetInnerHTML={{ __html: story.acceptanceCriteria }}></div>
-                    <FaChevronUp className={styles.expandIcon} onClick={() => toggleExpand(index)} />
+                    <span className={styles.expandIcon} onClick={() => toggleExpand(index)}>▲</span>
                   </div>
                 ) : (
                   <div>
                     <div dangerouslySetInnerHTML={{ __html: story.acceptanceCriteria.substring(0, 200) + (story.acceptanceCriteria.length > 200 ? '...' : '') }}></div>
                     {story.acceptanceCriteria.length > 200 && (
-                      <FaChevronDown className={styles.expandIcon} onClick={() => toggleExpand(index)} />
+                      <span className={styles.expandIcon} onClick={() => toggleExpand(index)}>▼</span>
                     )}
                   </div>
                 )}
