@@ -219,7 +219,7 @@ export default function BuildAlongMonth() {
                 </CollapsibleSection>
 
                 <DevelopmentStories />
-
+<br />
                 <CollapsibleSection title="Changelog">
                     <div className={styles.questionsSection}>
 
@@ -231,8 +231,11 @@ export default function BuildAlongMonth() {
                             <li style={listItemStyles}>Updated all instances of "Form Component" to say "Form Component Bundle". </li>
 
                             <li style={listItemStyles}> Added changelog at bottom of page.
-                            </li><li style={listItemStyles}> Added ability to filter by whether it's a UI Builder story or not.
                             </li>
+                            <li style={listItemStyles}> Added ability to filter by whether it's a UI Builder story or not.
+                            </li>
+
+                            <li style={listItemStyles}> Made it so checkboxed stories obeyed the filter. </li>
                         </ul>
                         
                     </div>
