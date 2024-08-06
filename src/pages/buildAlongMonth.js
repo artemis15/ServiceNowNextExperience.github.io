@@ -84,6 +84,7 @@ export default function BuildAlongMonth() {
                     
                     <h3>Contributing</h3>
                     <p>If you have any feedback about this project, want to contribute more stories, or want to provide helpful links for any of the stories below, drop by the <a href ="https://github.com/ServiceNowNextExperience/ServiceNowNextExperience.github.io/discussions"><u>discussions section</u></a> of this github repository and let us know. Please use labels to tag your posts appropriately, and thanks in advance!</p>
+                    <p>There will be a changelog maintained at the bottom of the page, and the github repository, to keep track of changes as they are published. </p>
                 </div>
 
                 <CollapsibleSection title="Project Approach">
@@ -218,6 +219,24 @@ export default function BuildAlongMonth() {
                 </CollapsibleSection>
 
                 <DevelopmentStories />
+
+                <CollapsibleSection title="Changelog">
+                    <div className={styles.questionsSection}>
+
+                        <p>2024.08.06 - Release </p>
+
+                        <ul style={listStyles}>
+                            <li style={listItemStyles}>Initial release of stories. </li>
+
+                            <li style={listItemStyles}>Updated all instances of "Form Component" to say "Form Component Bundle". </li>
+
+                            <li style={listItemStyles}> Added changelog at bottom of page.
+                            </li><li style={listItemStyles}> Added ability to filter by whether it's a UI Builder story or not.
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </CollapsibleSection>
             </div>
         </Layout>
     );

@@ -25,6 +25,7 @@ Our goal in “Build Along Month” is to help you:
 - get real-life experience using Agile as you might in your job as a Developer or Administrator 
 - prepare you for future job opportunities 
 
+You can keep track of changes either at the bottom of the Build Along Month page, or here on the [changelog](/CHANGELOG.md).
 
 ### Discussions
   We’re using Discussions as a place to collaborate, ask questions, make this Build Along Month project even better, and show off our progress. We hope that you use this Discussions area for:
