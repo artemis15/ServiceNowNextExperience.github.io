@@ -25,6 +25,7 @@ const DevelopmentStories = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentHints, setCurrentHints] = useState('');
   const [expandedStories, setExpandedStories] = useState({}); // State to manage expanded rows
+  const [filter, setFilter] = useState('all'); // State for filter
 
   useEffect(() => {
     const savedState = JSON.parse(localStorage.getItem('completedStories')) || {};
@@ -61,6 +62,16 @@ const DevelopmentStories = () => {
     }));
   };
 
+  const handleFilterChange = (e) => {
+    setFilter(e.target.value);
+  };
+
+  const filteredStories = storiesData.filter((story) => {
+    if (filter === 'uiBuilder') return story.product === 'UI Builder';
+    if (filter === 'nonUiBuilder') return story.product !== 'UI Builder';
+    return true;
+  });
+
   return (
     <div className={styles.storiesContainer}>
       <h1 className={styles.storiesTitle}>Stories</h1>
@@ -74,6 +85,14 @@ const DevelopmentStories = () => {
       >
         Clear All
       </button>
+      <div className={styles.filterContainer}>
+        <label htmlFor="filter">Filter Stories:</label>
+        <select id="filter" value={filter} onChange={handleFilterChange}>
+          <option value="all">All</option>
+          <option value="uiBuilder">UI Builder Stories</option>
+          <option value="nonUiBuilder">Non-UI Builder Stories</option>
+        </select>
+      </div>
       <div className={styles.storiesList}>
         <div className={styles.storiesHeader}>
           <div className={styles.headerCheckbox}></div>
@@ -83,7 +102,7 @@ const DevelopmentStories = () => {
           <div className={styles.headerSoThat}>So that</div>
           <div className={styles.headerAcceptanceCriteria}>Acceptance Criteria</div>
         </div>
-        {storiesData.map((story, index) => (
+        {filteredStories.map((story, index) => (
           <div key={index} className={`${styles.storyItem} ${index % 2 === 0 ? styles.storyItemAlt : ''} ${completedStories[index] ? styles.storyCompleted : ''}`}>
             <div className={styles.storyCheckbox}>
               <input
@@ -140,7 +159,7 @@ const DevelopmentStories = () => {
         <div className={styles.modalContent}>
           <h2>Hints</h2>
           <p>
-          <div dangerouslySetInnerHTML={{ __html: currentHints }} />
+            <div dangerouslySetInnerHTML={{ __html: currentHints }} />
           </p>
           <button className={styles.modalCloseButton} onClick={closeModal}>Close</button>
         </div>
