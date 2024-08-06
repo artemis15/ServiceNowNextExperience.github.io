@@ -33,7 +33,9 @@ const DevelopmentStories = () => {
   }, []);
 
   const handleCheckboxChange = (index) => {
-    const newCompletedStories = { ...completedStories, [index]: !completedStories[index] };
+    const filteredStories = getFilteredStories();
+    const actualIndex = storiesData.indexOf(filteredStories[index]);
+    const newCompletedStories = { ...completedStories, [actualIndex]: !completedStories[actualIndex] };
     setCompletedStories(newCompletedStories);
     localStorage.setItem('completedStories', JSON.stringify(newCompletedStories));
   };
@@ -66,11 +68,15 @@ const DevelopmentStories = () => {
     setFilter(e.target.value);
   };
 
-  const filteredStories = storiesData.filter((story) => {
-    if (filter === 'uiBuilder') return story.product === 'UI Builder';
-    if (filter === 'nonUiBuilder') return story.product !== 'UI Builder';
-    return true;
-  });
+  const getFilteredStories = () => {
+    return storiesData.filter((story) => {
+      if (filter === 'uiBuilder') return story.product === 'UI Builder';
+      if (filter === 'nonUiBuilder') return story.product !== 'UI Builder';
+      return true;
+    });
+  };
+
+  const filteredStories = getFilteredStories();
 
   return (
     <div className={styles.storiesContainer}>
@@ -103,11 +109,11 @@ const DevelopmentStories = () => {
           <div className={styles.headerAcceptanceCriteria}>Acceptance Criteria</div>
         </div>
         {filteredStories.map((story, index) => (
-          <div key={index} className={`${styles.storyItem} ${index % 2 === 0 ? styles.storyItemAlt : ''} ${completedStories[index] ? styles.storyCompleted : ''}`}>
+          <div key={index} className={`${styles.storyItem} ${index % 2 === 0 ? styles.storyItemAlt : ''} ${completedStories[storiesData.indexOf(story)] ? styles.storyCompleted : ''}`}>
             <div className={styles.storyCheckbox}>
               <input
                 type="checkbox"
-                checked={!!completedStories[index]}
+                checked={!!completedStories[storiesData.indexOf(story)]}
                 onChange={() => handleCheckboxChange(index)}
               />
               {story.product === 'UI Builder' && (
