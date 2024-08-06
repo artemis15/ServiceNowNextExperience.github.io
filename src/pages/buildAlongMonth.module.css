@@ -47,7 +47,7 @@
 .collapsibleHeader {
     background-color: #032D42;
     color: white;
-    padding: 1rem;
+    padding: 1rem !important;
     cursor: pointer;
     display: flex;
     justify-content: space-between;

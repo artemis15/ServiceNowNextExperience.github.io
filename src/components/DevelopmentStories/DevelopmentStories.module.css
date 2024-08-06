@@ -254,3 +254,20 @@
 .expandIcon:hover {
   color: #032D42;
 }
+
+
+[data-theme="dark"] .filterContainer {
+  color: white;
+}
+.filterContainer {
+  margin: 20px 0;
+  color: #333333;
+}
+
+.filterContainer label {
+  margin-right: 10px;
+}
+
+.filterContainer select {
+  padding: 5px;
+}
