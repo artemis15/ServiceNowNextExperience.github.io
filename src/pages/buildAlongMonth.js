@@ -71,6 +71,10 @@ export default function BuildAlongMonth() {
                         Prepare you for future job opportunities
                         </li>
                     </ul>
+
+                    <p>These stories will guide you through building an application that will allow an end user to go to conferences or other networking events and grab information quickly from people they meet so they can follow up later. It's meant to be quick to use - Users can whip out their phone, open the form, put in the information needed, and then keep moving on to the next session.</p>
+
+
                     <p className={styles.storyHints}>
                         Here are the livestreams where you can watch us working through the UI Builder stories:</p>
                         <ul style={listStyles}>
@@ -84,7 +88,8 @@ export default function BuildAlongMonth() {
                     
                     <h3>Contributing</h3>
                     <p>If you have any feedback about this project, want to contribute more stories, or want to provide helpful links for any of the stories below, drop by the <a href ="https://github.com/ServiceNowNextExperience/ServiceNowNextExperience.github.io/discussions"><u>discussions section</u></a> of this github repository and let us know. Please use labels to tag your posts appropriately, and thanks in advance!</p>
-                    <p>There will be a changelog maintained at the bottom of the page, and the github repository, to keep track of changes as they are published. </p>
+                    <p>There will be a changelog maintained at the bottom of the page, and the <a href="https://github.com/ServiceNowNextExperience/ServiceNowNextExperience.github.io/blob/source/CHANGELOG.md"><u>github repository</u></a>, to keep track of changes as they are published. </p>
+                    <p><a href="https://github.com/ServiceNowNextExperience/ServiceNowNextExperience.github.io/discussions/51"><u>Here is the list</u></a> of known issues that you might encounter.</p>
                 </div>
 
                 <CollapsibleSection title="Project Approach">
@@ -238,7 +243,18 @@ export default function BuildAlongMonth() {
                             <li style={listItemStyles}> Made it so checkboxed stories obeyed the filter. </li>
                         </ul>
                         
+                      
+                        <p>2024.08.07 - Update 1 </p>
+
+                        <ul style={listStyles}>
+                            <li style={listItemStyles}>Added back a description of the app we're building that accidentally got removed. </li>
+
+                            <li style={listItemStyles}>Added information where if you encounter an error stating "Private application scope" when you go to build the pages in UI Builder, you should give yourself the <code>x_snc_bam_you_i_0.user</code> and <code>x_snc_bam_you_i_0.admin</code> roles. </li>
+
+
+                        </ul>
                     </div>
+                    
                 </CollapsibleSection>
             </div>
         </Layout>
