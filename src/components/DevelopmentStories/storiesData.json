@@ -4,7 +4,7 @@
     "asA": "Conference attendee",
     "iWantTo": "Have a page where I can enter a person's contact information",
     "soThat": "I can easily and quickly add the contact information for someone I meet",
-    "acceptanceCriteria": "The blank page has been created in UI Builder under the U&I Conference notes Workspace experience.",
+    "acceptanceCriteria": "The blank page has been created in UI Builder under the U&I Conference notes Workspace experience.<br/> <b>Note:</b> if you encounter an error stating \"Private application scope\" when you go to build the pages in UI Builder, you should give yourself the <code>x_snc_bam_you_i_0.user</code> and <code>x_snc_bam_you_i_0.admin</code> roles.",
     "hints": "",
     "product": "UI Builder"
   },
